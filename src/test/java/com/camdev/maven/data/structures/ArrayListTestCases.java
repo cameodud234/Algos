@@ -17,16 +17,16 @@ public class ArrayListTestCases {
 		);
 	}
 	
-	public static Stream<Arguments> arrayCurrSizeArgs() {
-		return Stream.of(
-				
-			Arguments.of(new ArrayList<Integer>(10), 0 ),
-			Arguments.of(new ArrayList<Integer>(Arrays.asList(1,2,3)), 3),
-			Arguments.of(new ArrayList<Integer>(Arrays.asList(4,5,6,7,3,343,64,2,32,64,75,54)), 12),
-			Arguments.of(new ArrayList<String>(Arrays.asList("Cameron")), 1)
-				
-		); 
-	}
+//	public static Stream<Arguments> arrayCurrSizeArgs() {
+//		return Stream.of(
+//				
+//			Arguments.of(new ArrayList<Integer>(10), 0 ),
+//			Arguments.of(new ArrayList<Integer>(Arrays.asList(1,2,3)), 3),
+//			Arguments.of(new ArrayList<Integer>(Arrays.asList(4,5,6,7,3,343,64,2,32,64,75,54)), 12),
+//			Arguments.of(new ArrayList<String>(Arrays.asList("Cameron")), 1)
+//				
+//		); 
+//	}
 	
 	public static Stream<Arguments> isEmptyArgs() {
 		return Stream.of(
