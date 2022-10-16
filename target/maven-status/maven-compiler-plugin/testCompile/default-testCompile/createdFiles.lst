@@ -1,2 +1,8 @@
-com/camdev/maven/data/structures/ArrayListTestBuilder.class
-com/camdev/maven/Algos/AppTest.class
+com\camdev\maven\data\structures\ArrayListTestCases.class
+com\camdev\maven\data\structures\ArrayListTestBuilder.class
+com\camdev\maven\data\structures\HeapTest.class
+com\camdev\maven\algorithms\SortTest.class
+com\camdev\maven\algorithms\SortTestCases.class
+com\camdev\maven\data\structures\HeapTestCases.class
+com\camdev\maven\Algos\AppTest.class
+com\camdev\maven\data\structures\ArrayListTest.class
