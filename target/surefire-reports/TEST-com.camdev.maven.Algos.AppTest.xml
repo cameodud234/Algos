@@ -2,60 +2,58 @@
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.camdev.maven.Algos.AppTest" time="0" tests="0" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Cameron\Documents\GitHub\Algos\target\test-classes;C:\Users\Cameron\Documents\GitHub\Algos\target\classes;C:\Users\Cameron\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.1\junit-jupiter-params-5.8.1.jar;C:\Users\Cameron\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\Cameron\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Cameron\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\Cameron\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Cameron\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Cameron\.m2\repository\org\apache\logging\log4j\log4j-core\2.18.0\log4j-core-2.18.0.jar;"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/camerondudley/Documents/GitHub/Algos/target/test-classes:/Users/camerondudley/Documents/GitHub/Algos/target/classes:/Users/camerondudley/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/camerondudley/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/camerondudley/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/camerondudley/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/camerondudley/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/camerondudley/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/camerondudley/.m2/repository/org/apache/logging/log4j/log4j-core/2.18.0/log4j-core-2.18.0.jar:"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
-    <property name="user.timezone" value="America/Los_Angeles"/>
-    <property name="os.name" value="Windows 11"/>
+    <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Cameron\AppData\Local\Temp\surefire7695028723335005244\surefirebooter6882584523665284132.jar C:\Users\Cameron\AppData\Local\Temp\surefire7695028723335005244 2022-10-15T21-26-53_354-jvmRun1 surefire9642363250487749894tmp surefire_017921370024659598504tmp"/>
+    <property name="sun.boot.library.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_17.0.4.v20220903-1038/jre/lib"/>
+    <property name="sun.java.command" value="/Users/camerondudley/Documents/GitHub/Algos/target/surefire/surefirebooter9360757610681046235.jar /Users/camerondudley/Documents/GitHub/Algos/target/surefire 2022-10-19T22-45-05_681-jvmRun1 surefire5785610350913075174tmp surefire_011899720960283545992tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Cameron\Documents\GitHub\Algos\target\test-classes;C:\Users\Cameron\Documents\GitHub\Algos\target\classes;C:\Users\Cameron\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.1\junit-jupiter-params-5.8.1.jar;C:\Users\Cameron\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\Cameron\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Cameron\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\Cameron\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Cameron\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Cameron\.m2\repository\org\apache\logging\log4j\log4j-core\2.18.0\log4j-core-2.18.0.jar;"/>
+    <property name="surefire.test.class.path" value="/Users/camerondudley/Documents/GitHub/Algos/target/test-classes:/Users/camerondudley/Documents/GitHub/Algos/target/classes:/Users/camerondudley/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/camerondudley/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/camerondudley/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/camerondudley/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/camerondudley/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/camerondudley/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/camerondudley/.m2/repository/org/apache/logging/log4j/log4j-core/2.18.0/log4j-core-2.18.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Cameron"/>
+    <property name="user.home" value="/Users/camerondudley"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2022-08-12"/>
-    <property name="java.home" value="C:\Program Files\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038\jre"/>
-    <property name="file.separator" value="\"/>
+    <property name="java.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_17.0.4.v20220903-1038/jre"/>
+    <property name="file.separator" value="/"/>
     <property name="style.color" value="always"/>
-    <property name="basedir" value="C:\Users\Cameron\Documents\GitHub\Algos"/>
+    <property name="basedir" value="/Users/camerondudley/Documents/GitHub/Algos"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Cameron\AppData\Local\Temp\surefire7695028723335005244\surefirebooter6882584523665284132.jar"/>
-    <property name="user.script" value=""/>
+    <property name="surefire.real.class.path" value="/Users/camerondudley/Documents/GitHub/Algos/target/surefire/surefirebooter9360757610681046235.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.4.1+1"/>
-    <property name="user.name" value="Cameron"/>
-    <property name="path.separator" value=";"/>
-    <property name="os.version" value="10.0"/>
+    <property name="user.name" value="camerondudley"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.6"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Temurin-17.0.4.1+1"/>
-    <property name="localRepository" value="C:\Users\Cameron\.m2\repository"/>
+    <property name="localRepository" value="/Users/camerondudley/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
-    <property name="java.io.tmpdir" value="C:\Users\Cameron\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="/var/folders/zf/rmm0nxld6vj1c4xzvt_q_54w0000gn/T/"/>
     <property name="java.version" value="17.0.4.1"/>
-    <property name="user.dir" value="C:\Users\Cameron\Documents\GitHub\Algos"/>
-    <property name="os.arch" value="amd64"/>
+    <property name="user.dir" value="/Users/camerondudley/Documents/GitHub/Algos"/>
+    <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin/server;C:/Program Files/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\Cameron\AppData\Local\Microsoft\WindowsApps;C:\Users\Cameron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Cameron\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\Cameron\AppData\Local\GitHubDesktop\bin;C:\Users\Cameron\AppData\Roaming\npm;C:\Users\Cameron\.dotnet\tools;C:\Program Files\eclipse;;."/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/camerondudley/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17.0.4.1+1"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
 </testsuite>

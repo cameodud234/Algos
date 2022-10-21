@@ -1,6 +1,3 @@
-com\camdev\maven\data\structures\ArrayList.class
-com\camdev\maven\data\structures\Heap.class
-com\camdev\maven\Algos\App.class
-com\camdev\maven\data\structures\ArrayList$Itr.class
-com\camdev\maven\algorithms\Sort.class
-com\camdev\maven\data\structures\ArrayList$ListItr.class
+com/camdev/maven/data/structures/Heap.class
+com/camdev/maven/Algos/App.class
+com/camdev/maven/algorithms/Sort.class
