@@ -8,8 +8,9 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 public class LeetTest {
-	@ParameterizedTest
-	@MethodSource("sortListArgs")
-	public <T extends Comparable<T>> void maxSumTest(List<T> list, boolean expected){
-	}
+//	@ParameterizedTest
+//	@MethodSource("sortListArgs")
+//	public void maxSumTest(List<Integer> list, long expectedSum) throws Exception{
+//		assertEquals(Leet.maxSum(list), expectedSum);
+//	}
 }

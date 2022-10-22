@@ -23,7 +23,7 @@ public class Heap<T extends Comparable<T>> {
             while(pos >= 0 && elements.get(curr).compareTo(elements.get(pos)) < 0) {
                 Collections.swap(elements, pos, curr);
                 curr = pos;
-                pos = pos / 2;
+                pos = (pos + 1 / 2) - 1;
             }
         }
         return element;
