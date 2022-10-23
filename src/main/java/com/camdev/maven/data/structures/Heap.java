@@ -42,9 +42,7 @@ public class Heap<T extends Comparable<T>> {
     public List<T> toList() {
         return elements;
     }
+   
     
-//    private void heapify(T element) {
-//        
-//    }
     
 }

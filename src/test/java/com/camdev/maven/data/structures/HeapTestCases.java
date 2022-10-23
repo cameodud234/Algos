@@ -9,8 +9,8 @@ public class HeapTestCases {
 	
 	public static Stream<Arguments> insertElementTestCase() {
 		return Stream.of(
-			Arguments.of(HeapTestCaseBuilder.HeapBuildAdd(Arrays.asList(null), 4), Arrays.asList(null,4)),
-			Arguments.of(HeapTestCaseBuilder.HeapBuildAdd(Arrays.asList(1,2,3,4), 5), Arrays.asList(null,1,2,3,4,5)),
+			Arguments.of(HeapTestCaseBuilder.HeapBuildAdd(Arrays.asList(null),4), Arrays.asList(null,4)),
+			Arguments.of(HeapTestCaseBuilder.HeapBuildAdd(Arrays.asList(null,1,2,3,4), 5), Arrays.asList(null,1,2,3,4,5)),
 			Arguments.of(HeapTestCaseBuilder.HeapBuildAdd(Arrays.asList(null,3,7,13,9), 4), Arrays.asList(null,3,4,13,9,7)),
 			Arguments.of(HeapTestCaseBuilder.HeapBuildAdd(Arrays.asList(null,5,-3,7,6,9), 6), Arrays.asList(null, -3,5,6,6,9,7))
 		);

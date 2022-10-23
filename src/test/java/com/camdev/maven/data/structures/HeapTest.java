@@ -17,7 +17,7 @@ public class HeapTest extends HeapTestCases {
     }
 	
     @ParameterizedTest
-    @MethodSource("insertElementTestCase")
+    @MethodSource("insertElementsTestCase")
     public <T extends Comparable<T>> void insertElementsTest(Heap<T> heap, List<T> list) {
         assertEquals(heap.toList().toString() , list.toString());
     }
