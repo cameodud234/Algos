@@ -10,10 +10,16 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 public class HeapTest extends HeapTestCases {
     
-    @ParameterizedTest
+	@ParameterizedTest
     @MethodSource("insertElementTestCase")
     public <T extends Comparable<T>> void insertElementTest(Heap<T> heap, List<T> list) {
-        assertEquals(heap.getList().toString() , list.toString());
+        assertEquals(heap.toList().toString() , list.toString());
+    }
+	
+    @ParameterizedTest
+    @MethodSource("insertElementTestCase")
+    public <T extends Comparable<T>> void insertElementsTest(Heap<T> heap, List<T> list) {
+        assertEquals(heap.toList().toString() , list.toString());
     }
 
 }
