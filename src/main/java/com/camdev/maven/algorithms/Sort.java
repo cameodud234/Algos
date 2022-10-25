@@ -29,7 +29,8 @@ public class Sort {
 		return true;
 	}
 	
-	public static <T extends Comparable<T>> void insertionSort(List<T> list) {
+	public static <T extends Comparable<T>> void insertionSort(List<T> list) { 
+		
 		for(int i = 1; i < list.size(); i++) {
 			
 			T mem = list.get(i);
@@ -43,6 +44,7 @@ public class Sort {
 			list.set(j, mem);
 			
 		}
+		
 	}
 
 	public static <T extends Comparable<T>> void selectionSort(List<T> list) {
