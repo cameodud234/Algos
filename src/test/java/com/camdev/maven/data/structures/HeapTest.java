@@ -34,6 +34,7 @@ public class HeapTest extends HeapTestCases {
     @ParameterizedTest
     @MethodSource("pollElementTestCases")
     public <T extends Comparable<T>> void pollElementTest(Heap<T> heap, String arg) {
+    	heap.poll();
     	assertEquals(heap.toString(), arg);
     }
 

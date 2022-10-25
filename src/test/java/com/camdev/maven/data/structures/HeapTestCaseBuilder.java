@@ -18,14 +18,5 @@ public class HeapTestCaseBuilder {
         return heap;
     }
     
-    public static <T extends Comparable<T>> Heap<T> HeapPoll(List<T> list) {
-    	
-    	Heap<T> heap = new Heap<T>();
-    	heap.insertElements(list);
-    	heap.poll();
-    	return heap;
-    
-    }
-    
 }
 

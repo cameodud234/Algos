@@ -66,20 +66,24 @@ public class Heap<T extends Comparable<T>> {
     	childL = 2 * first;
     	childR = childL + 1;
     	
-    	while((elements.get(current) != null)) {
-    		if((elements.get(childL) != null) && (elements.get(childR) != null)) {
-    			int indexChild = (elements.get(childL).compareTo(elements.get(childR))) < 0 ? childL : childR; 
+    	while(current < elements.size()) {
+    		if((childL < elements.size()) && (childR < elements.size())) {
+    			int indexChild = (elements.get(childL).compareTo(elements.get(childR))) <= 0 ? childL : childR; 
          		if(elements.get(current).compareTo(elements.get(indexChild)) > 0) {
          			Collections.swap(elements, current, indexChild);
          			current = indexChild;
-             		childL = 2 * indexChild;
+             		childL = 2 * current;
+             		childR = childL + 1;
          		}
     		}
-    		else if(elements.get(childL) != null) {
+    		else if(childL < elements.size()) {
     			if(elements.get(current).compareTo(elements.get(childL)) > 0) {
          			Collections.swap(elements, current, childL);
          			return element;
          		}
+    		}
+    		else {
+    			break;
     		}
      		
     	}
