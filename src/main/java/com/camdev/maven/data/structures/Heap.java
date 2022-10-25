@@ -17,13 +17,13 @@ public class Heap<T extends Comparable<T>> {
     public T insertElement(T element) {
         elements.add(element);
         if(elements.size() > 2) {
-            int pos = elements.size() - 1;
-            pos = pos / 2;
-            int curr = elements.size() - 1;
-            while((elements.get(pos) != null) && (elements.get(curr).compareTo(elements.get(pos)) < 0)) {
-                Collections.swap(elements, pos, curr);
-                curr = pos;
-                pos = pos / 2;
+            int parent = elements.size() - 1;
+            parent = parent / 2;
+            int current = elements.size() - 1;
+            while((elements.get(parent) != null) && (elements.get(current).compareTo(elements.get(parent)) < 0)) {
+                Collections.swap(elements, parent, current);
+                current = parent;
+                parent = parent / 2;
             }
         }
         return element;
@@ -40,7 +40,46 @@ public class Heap<T extends Comparable<T>> {
     public List<T> toList() {
         return elements;
     }
+    
+    public boolean containsElements() {
+    	if(elements.size() == 1) return false;
+    	return true;
+    }
+    
+    public T peek() {
+    	if(!containsElements()) return null;
+    	return elements.get(1);
+    }
    
+    public T poll() {
+    	T element = peek();
+    	if(element == null) return null;
+    	int first = 1;
+    	int last = elements.size() - 1;
+    	Collections.swap(elements, last, first);
+    	
+    	elements.remove(last);
+    	
+    	int current = first;
+    	int childL = first;
+    	int childR = first;
+    	childL = 2 * first;
+    	childR = childL + 1;
+    	
+    	while((elements.get(current) != null)) {
+    		int indexChild = (elements.get(childL).compareTo(elements.get(childR))) < 0 ? childL : childR; 
+     		if(elements.get(current).compareTo(elements.get(indexChild)) > 0) {
+     			Collections.swap(elements, current, indexChild);
+     		}
+     		current = indexChild;
+     		childL = 2 * indexChild;
+     		childR = childL + 1;
+     		
+    	}
+    	
+    	return element;
+    	
+    }
     
     
 }
