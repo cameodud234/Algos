@@ -13,13 +13,13 @@ public class HeapTest extends HeapTestCases {
 	@ParameterizedTest
     @MethodSource("insertElementsTestCases")
     public <T extends Comparable<T>> void insertElementsTest(Heap<T> heap, String arg) {
-        assertEquals(heap.toList().toString() , arg);
+        assertEquals(heap.toString() , arg);
     }
     
 	@ParameterizedTest
     @MethodSource("insertElementTestCases")
     public <T extends Comparable<T>> void insertElementTest(Heap<T> heap, String arg) {
-        assertEquals(heap.toList().toString() , arg);
+        assertEquals(heap.toString() , arg);
     }
 	
 	@ParameterizedTest
@@ -27,14 +27,14 @@ public class HeapTest extends HeapTestCases {
 	public <T extends Comparable<T>> void peekTest(Heap<T> heap, String arg) {
 		if(heap.peek() != null) assertEquals(heap.peek().toString(), arg);
 		else {
-			assertTrue(true);;
+			assertTrue(true);
 		}
 	}
     
     @ParameterizedTest
     @MethodSource("pollElementTestCases")
-    public <T extends Comparable<T>> void deleteElementTest(Heap<T> heap, String arg) {
-    	
+    public <T extends Comparable<T>> void pollElementTest(Heap<T> heap, String arg) {
+    	assertEquals(heap.toString(), arg);
     }
 
 }

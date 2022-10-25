@@ -36,10 +36,14 @@ public class HeapTestCases {
 		);
 	}
 	
-//	public static Stream<Arguments> deleteElementTestCases() {
-//		return Stream.of(
-//				Arguments.of(HeapTestCaseBuilder.HeapBuild(Arrays.asList()).delete(), "")
-//		);
-//	}
+	public static Stream<Arguments> pollElementTestCases() {
+		return Stream.of(
+				Arguments.of(HeapTestCaseBuilder.HeapPoll(Arrays.asList()), "[null]"),
+        		Arguments.of(HeapTestCaseBuilder.HeapPoll(Arrays.asList(1,2,3,4)), "[null, 2, 3, 4]"),
+        		Arguments.of(HeapTestCaseBuilder.HeapPoll(Arrays.asList(3,4,2,1)), "[null, 2, 3, 4]"),
+	            Arguments.of(HeapTestCaseBuilder.HeapPoll(Arrays.asList(7,3,6,2,88,5,33,4,19)), "[null, 3, 5, 4, 88, 6, 33, 7, 19]"),
+	            Arguments.of(HeapTestCaseBuilder.HeapPoll(Arrays.asList(5,3,4,4,6)), "[null, 4, 4, 5, 6]")
+		);
+	}
     
 }
