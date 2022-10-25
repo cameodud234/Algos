@@ -20,7 +20,7 @@ public class Heap<T extends Comparable<T>> {
             int parent = elements.size() - 1;
             parent = parent / 2;
             int current = elements.size() - 1;
-            while((elements.get(parent) != null) && (elements.get(current).compareTo(elements.get(parent)) < 0)) {
+            while((parent > 0) && (elements.get(current).compareTo(elements.get(parent)) < 0)) {
                 Collections.swap(elements, parent, current);
                 current = parent;
                 parent = parent / 2;
@@ -56,39 +56,43 @@ public class Heap<T extends Comparable<T>> {
     	if(element == null) return null;
     	int first = 1;
     	int last = elements.size() - 1;
-    	Collections.swap(elements, last, first);
+    	
+    	elements.set(first, elements.get(last));
     	
     	elements.remove(last);
     	
     	int current = first;
-    	int childL = first;
-    	int childR = first;
-    	childL = 2 * first;
-    	childR = childL + 1;
     	
     	while(current < elements.size()) {
-    		if((childL < elements.size()) && (childR < elements.size())) {
-    			int indexChild = (elements.get(childL).compareTo(elements.get(childR))) <= 0 ? childL : childR; 
-         		if(elements.get(current).compareTo(elements.get(indexChild)) > 0) {
-         			Collections.swap(elements, current, indexChild);
-         			current = indexChild;
-             		childL = 2 * current;
-             		childR = childL + 1;
-         		}
-    		}
-    		else if(childL < elements.size()) {
-    			if(elements.get(current).compareTo(elements.get(childL)) > 0) {
-         			Collections.swap(elements, current, childL);
-         			return element;
-         		}
-    		}
-    		else {
-    			break;
-    		}
-     		
+    		passDown(current);
     	}
     	
     	return element;
+    	
+    }
+    
+    private void passDown(int current) {
+    	
+    	int childL = 2 * current;
+    	int childR = childL + 1;
+    	
+    	if(childL < elements.size() && childR < elements.size()) {
+    		int indexChild = (elements.get(childL).compareTo(elements.get(childR)) <= 0) ? childL : childR;
+    		if(elements.get(current).compareTo(elements.get(indexChild)) > 0) {
+    			Collections.swap(elements, current, indexChild);
+    			current = indexChild;
+    		}
+    	}
+    	else if(childR > elements.size()) {
+    		if(elements.get(current).compareTo(elements.get(childL)) > 0) {
+    			Collections.swap(elements, current, childL);
+    			current = childL;
+    		}
+    	}
+    	else {
+    		current++;
+    		return;
+    	}
     	
     }
     
