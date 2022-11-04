@@ -30,7 +30,7 @@ public class Heap<T extends Comparable<T>> {
     }
     
     public void heapify() {
-    	for(int i = 1; i < elements.size(); i++) {
+    	for(int i = elements.size() - 1; i >= 1; i++) {
     		heapify(i);
     	}
     }

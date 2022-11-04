@@ -52,8 +52,8 @@ public class HeapTestCases {
 	
 	public static Stream<Arguments> heapifyTestCases() {
 		return Stream.of(
-				Arguments.of(Arrays.asList(1,2,3,4), "[null, 1, 2, 3, 4]"),
-				Arguments.of(Arrays.asList(3,4,2,1), "[null, 1, 2, 3, 4]")
+				Arguments.of(Arrays.asList(1,2,3,4), "[null, 4, 3, 2, 1]"),
+				Arguments.of(Arrays.asList(3,4,2,1), "[null, 4, 3, 2, 1]")
 		);
 	}
     

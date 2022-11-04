@@ -40,8 +40,9 @@ public class HeapTest extends HeapTestCases {
 	
 	@ParameterizedTest
 	@MethodSource("heapifyTestCases")
-	public <T extends Comparable<T>> void heapifyTest(List<T> list, String arg) {
+	public <T extends Comparable<T>> void heapifyTest(List<Integer> list, String out) {
 		Heap<Integer> heap = new Heap<Integer>(list);
+		assertEquals(heap.toString(), out);
 	}
 
 }
