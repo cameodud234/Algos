@@ -31,11 +31,17 @@ public class HeapTest extends HeapTestCases {
 //		}
 //	}
     
-    @ParameterizedTest
-    @MethodSource("pollElementTestCases")
-    public <T extends Comparable<T>> void pollElementTest(Heap<T> heap, String arg) {
-    	heap.poll();
-    	assertEquals(heap.toString(), arg);
-    }
+//    @ParameterizedTest
+//    @MethodSource("pollElementTestCases")
+//    public <T extends Comparable<T>> void pollElementTest(Heap<T> heap, String arg) {
+//    	heap.poll();
+//    	assertEquals(heap.toString(), arg);
+//    }
+	
+	@ParameterizedTest
+	@MethodSource("heapifyTestCases")
+	public <T extends Comparable<T>> void heapifyTest(List<T> list, String arg) {
+		Heap<Integer> heap = new Heap<Integer>(list);
+	}
 
 }

@@ -7,47 +7,59 @@ import java.util.List;
 
 public class Heap<T extends Comparable<T>> {
 
-    private List<T> elements;
+    private List<T> elements = new ArrayList<T>();
     
-    public Heap() {
-        elements = new ArrayList<T>();
+    public Heap(List<T> list) {
         elements.add(null);
+        for(T element: list) {
+        	elements.add(element);
+        }
+        heapify();
     }
     
-    public T insertElement(T element) {
-        elements.add(element);
-        if(elements.size() > 2) {
-            int parent = elements.size() - 1;
-            parent = parent / 2;
-            int current = elements.size() - 1;
-            while((parent > 0) && (elements.get(current).compareTo(elements.get(parent)) < 0)) {
-                Collections.swap(elements, parent, current);
-                current = parent;
-                parent = parent / 2;
-            }
-        }
-        return element;
-    } 
+    private int parent(int i) {
+    	return (int) Math.floor(i/2);
+    }
     
-    public List<T> insertElements(List<T> list) {
-        Iterator<T> itr = list.iterator();
-        while(itr.hasNext()) {
-            insertElement(itr.next());
-        }
-        return elements;
+    private int left(int i) {
+    	return 2 * i;
+    }
+    
+    private int right(int i) {
+    	return (2 * i) + 1;
+    }
+    
+    public void heapify() {
+    	for(int i = 1; i < elements.size(); i++) {
+    		heapify(i);
+    	}
+    }
+    
+    private void heapify(int i) {
+    	int L = left(i);
+    	int R = right(i);
+    	int largest = Integer.MIN_VALUE;
+    	if((L < elements.size()) && (elements.get(L).compareTo(elements.get(i)) > 0)) {
+    		largest = L;
+    	}
+    	else {
+    		largest = i;
+    	}
+    	if((R < elements.size()) && ( elements.get(R).compareTo(elements.get(largest)) > 0) ) {
+    		largest = R;
+    	}
+    	if(largest != i) {
+    		Collections.swap(elements, i, largest);
+    		heapify(largest);
+    	}
     }
     
     public List<T> toList() {
         return elements;
     }
     
-    public boolean containsElements() {
-    	if(elements.size() == 1) return false;
-    	return true;
-    }
-    
     public T peek() {
-    	if(!containsElements()) return null;
+    	if(elements.size() == 1) return null;
     	return elements.get(1);
     }
    

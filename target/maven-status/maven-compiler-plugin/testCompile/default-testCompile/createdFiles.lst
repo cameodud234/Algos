@@ -1,6 +1,8 @@
-com/camdev/maven/data/structures/HeapTestCases.class
-com/camdev/maven/data/structures/HeapTest.class
+com/camdev/maven/leetcode/LeetTest.class
 com/camdev/maven/algorithms/SortTest.class
 com/camdev/maven/Algos/AppTest.class
+com/camdev/maven/data/structures/HeapTestCases.class
+com/camdev/maven/leetcode/LeetTestCases.class
+com/camdev/maven/data/structures/HeapTest.class
 com/camdev/maven/algorithms/SortTestCases.class
 com/camdev/maven/data/structures/HeapTestCaseBuilder.class

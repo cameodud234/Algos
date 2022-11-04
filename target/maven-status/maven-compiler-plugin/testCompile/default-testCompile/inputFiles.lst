@@ -1,5 +1,7 @@
 /Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/Algos/AppTest.java
 /Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/data/structures/HeapTest.java
+/Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/leetcode/LeetTest.java
+/Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/leetcode/LeetTestCases.java
 /Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/data/structures/HeapTestCases.java
 /Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/algorithms/SortTestCases.java
 /Users/camerondudley/Documents/GitHub/Algos/src/test/java/com/camdev/maven/algorithms/SortTest.java
